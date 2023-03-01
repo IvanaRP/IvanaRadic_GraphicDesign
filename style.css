@@ -50,6 +50,22 @@ h2 {
   margin-right: 6px;
 }
 
+.download {
+  padding: 20px;
+}
+.links3 {
+  display: inline-block;
+  background-color: #1500ff;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 900;
+  height: 27px;
+  width: fit-content;
+  padding: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
 #myBtn {
   display: none;
   position: fixed;
