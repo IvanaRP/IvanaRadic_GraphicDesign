@@ -17,20 +17,24 @@
     <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go up!</button>
+    <div class="headerInfo1">
       <h1>Hej I’m Ivana!</h1>
-      <h2>have a look at my</h2>
-      <a href="public/img/CV_Radic-Perrichon_Ivana.pdf" target="_blank">CV</a>
-      <h2>
-        or if you’d like to contact me, talk about a project or ask me a
-        question just drop me an email!</h2>
-      <a href = "mailto:ivanaradicperrichon @gmail.com ">ivanaradicperrichon @gmail.com l</a>
-         <h2>Or stay in contact
-         </h2> 
-        <a href="https://www.linkedin.com/in/ivana-radicp/" target="_blank">LinkedIn</a> 
-      </h2>
+      <div class="headerInfo">
+            <h2>have a look at my</h2>
+            <a class="links" href="public/img/CV_Radic-Perrichon_Ivana.pdf" target="_blank">CV</a>
+            <h2>or if you’d like to contact me, </br> about a project or ask me a</br>
+                question just drop me an email!</h2>
+            <a class="links" href = "mailto:ivanaradicperrichon @gmail.com ">ivanaradicperrichon @gmail.com l</a>
+                <h2>Or stay in contact
+                </h2> 
+                <a class="links" href="https://www.linkedin.com/in/ivana-radicp/" target="_blank">LinkedIn</a> 
+            </h2>
+        </div>
     </div>
+   
     <div>
+
       <img
         src="public/img/Ivana_Radic-Perrichon_Designer 1.png"
         alt="Iv1"
@@ -187,5 +191,27 @@
         width="99%"
       />
     </div>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
   </body>
 </html>
